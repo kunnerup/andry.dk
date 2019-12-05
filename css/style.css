@@ -2,3 +2,65 @@
   margin: 0;
   padding: 0;
 }
+
+h1, h2, h3, h4,h5, h6, p, ul, a {
+font-family: 'Lato', sans-serif;
+text-align: center;
+}
+
+.bluesection h1, h2, h3, h4,h5, h6, p, ul, a {
+color: white;
+}
+/*----------------NAVIGATION------------*/
+nav ul {
+  display: flex;
+right: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  padding-top: 4px;
+  z-index: 100;
+  position: absolute;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+}
+
+#calltoa {
+  background-color: #44D9A0;
+  padding: 5px;
+  border-radius: 11px;
+  color: black;
+}
+
+
+/*-----------HEADERSECTION-----------*/
+.bluesection {
+background-color: #1989B2;
+width: 100%;
+color: white;
+text-align: center;
+}
+
+.bluesection h1 {
+font-size: 1.5em;
+padding-top: 70px;
+}
+
+.bluesection p {
+padding: 20px 0 20px 0;
+}
+
+.bluebottom {
+  height: 50px;
+  background-color: #1989B2;
+  clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
+}
+
+.bluetop {
+  height: 50px;
+  background-color: #1989B2;
+  clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
+}
