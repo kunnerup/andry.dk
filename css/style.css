@@ -100,6 +100,13 @@ nav ul li {
   display: none;
 }
 
+#booking {
+  height: 350px;
+  width: 95%;
+  margin: 0 5px 0 5px;
+  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
+}
+
 /*-----------HEADERSECTION-----------*/
 .bluesection {
 background-color: #1989B2;
