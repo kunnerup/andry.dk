@@ -66,8 +66,8 @@ nav ul li {
   opacity: 0.95;
   padding: 50px 0 50px 0;
   width: 100%;
-  height: 23%;
-  clip-path: polygon(0 0, 100% 0%, 100% 84%, 0 100%);
+  height: 230px;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 }
 
 .mobileMenu {
@@ -129,8 +129,22 @@ padding: 20px 0 20px 0;
   clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
 }
 
+.bluesectionheader {
+background-color: #1989B2;
+width: 100%;
+height: 280px;
+color: white;
+text-align: center;
+}
 
+.bluesectionheader h1 {
+font-size: 1.5em;
+padding-top: 70px;
+}
 
+.bluesectionheader p {
+padding: 20px 0 20px 0;
+}
 
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) {
