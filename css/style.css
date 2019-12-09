@@ -101,10 +101,12 @@ nav ul li {
 }
 
 #booking {
-  height: 350px;
+  height: 80vh;
   width: 95%;
   margin: 0 5px 0 5px;
-  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*-----------HEADERSECTION-----------*/
