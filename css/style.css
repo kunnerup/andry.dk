@@ -154,6 +154,54 @@ padding-top: 70px;
 .bluesectionheader p {
 padding: 20px 0 20px 0;
 }
+/*-----------footer-----------*/
+.container{
+    width: 100%;
+    height: 30%;
+    background-color: #1989B2;
+    position: absolute; 
+    bottom: 0%;
+    font-size: 10px;
+  
+}
+.flex{
+ display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column wrap;
+   align-content: stretch;
+}
+
+.container ul h3 {
+    position: absolute;
+    width: 100%;
+   
+}
+.container ul{
+    padding: 5%;
+}
+.ul1{
+    padding-bottom: 0%;
+    text-align: left;
+    position:relative;
+   
+}
+.ul2{
+    padding-bottom: 0%;
+    position:relative;
+   
+}
+.ul3{
+    padding-bottom: 0%;
+    position:relative;
+    
+}
+.ul4{
+    padding-bottom: 0%;
+    position:relative;
+   
+}
+
 
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) {
