@@ -106,7 +106,7 @@ nav ul li {
   margin: 0 5px 0 5px;
   border: none;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 /*-----------HEADERSECTION-----------*/
@@ -188,6 +188,40 @@ footer ul{
       background-color: #1989B2;
     border-top: white solid 2px;
 }
+
+
+/*----------------Elementer til siden-------------*/
+#ydelser {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#ydelser h3 {
+  color: #1989B2;
+}
+
+#ydelser div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+align-items: center;
+max-width: 90%;
+
+}
+
+#ydelser img {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
 
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) {
