@@ -292,6 +292,21 @@ max-width: 70%;
   color: #1989B2;
 }
 
+
+/*OM FLEMMING*/
+#flemmingsection {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#flemmingandry {
+margin: auto;
+width: 100%;
+}
+
+
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) {
 #calltoa {
