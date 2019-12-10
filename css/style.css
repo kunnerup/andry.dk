@@ -176,16 +176,16 @@ padding-top: 5%;
     width: 35%;
 color: white;
 
-    
+
 }
-h3 {
+footer h3 {
     font-weight: 300;
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
     text-align: left;
 }
-h3:before{
+footer h3:before{
     content: "";
     position: absolute;
     width: 12%;
@@ -198,30 +198,37 @@ h3:before{
 footer ul {
     list-style-type: none;
     text-align: left;
-   
+
 }
 
 #some{
     width: 85%;
-    height: 10%;
+    height: 70px;
     margin: auto;
       background-color: #1989B2;
     border-top: white solid 2px;
+
 }
 <<<<<<< HEAD
 #some i{
     padding-top: 1px;
     padding-bottom: 10px;
-    position: relative;
-    right: 33%;
+    left: 0;
 }
+
+#some div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+}
+
 #some img{
     width: 90px;
-    position: relative;
-    right: -33%;
+    position: block;
     padding-top: 5px
+    float:right;
 }
-=======
 
 
 /*----------------Elementer til siden-------------*/
@@ -243,17 +250,19 @@ footer ul {
   flex-direction: column;
   padding-top: 30px;
 align-items: center;
-max-width: 90%;
+max-width: 70%;
 
 }
 
 #ydelser img {
   padding: 10px;
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: 100px;
 }
 
-
+#dnastring {
+  display: none;
+}
 
 
 
@@ -277,6 +286,31 @@ max-width: 90%;
 }
 #hideshow {
   display: none;
+}
+
+.flexboxx {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#dnastring {
+    position: absolute;
+    padding-top: 35px;
+  display: flex;
+  height: 50%;
+  width: 10%;
+  opacity: 0.8;
+}
+
+#ydelser {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#ydelser div {
+  width: 34%;
 }
 
 }
