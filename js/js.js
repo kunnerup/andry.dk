@@ -15,3 +15,14 @@ $(document).ready(function(){
     $("#priser").slideToggle("slow");
   });
 });
+
+
+//mapbox api
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYTU1MDgiLCJhIjoiY2syMDZ5bXBtMDBuZTNlcXpvbnozYzJuZSJ9.Wo5gS17JDQ8hYPQ82hQlgA';
+var map = new mapboxgl.Map({
+style: 'mapbox://styles/jona5508/ck3zpq0h31vuk1cn74wbe32ug',
+center: [14.42, 53.31],
+zoom: 3.63,
+container: 'map',
+antialias: true
+});
