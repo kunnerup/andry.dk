@@ -157,8 +157,8 @@ padding: 20px 0 20px 0;
 /*-----------footer-----------*/
 footer {
     width: 100%;
-    height: 30%;
-    padding-bottom: 5%;
+    height: 200px;
+    padding-bottom: 50px;
     background-color: #1989B2;
     position: relative;
     font-size: 10px;
@@ -169,7 +169,6 @@ footer {
 }
 footer div{
   display: flex;
-flex-direction: column;
 padding-top: 5%;
     width: 35%;
 color: white;
@@ -183,7 +182,7 @@ footer h3 {
     position: relative;
     text-align: justify;
     margin: auto;
-    
+
 }
 footer h3:before{
     content: "";
@@ -312,9 +311,13 @@ margin: auto;
 width: 100%;
 }
 
+#map {
+  display: none;
+}
+
 
 /*------------------------TABLET----------------------------*/
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1023px) (min-width: 768px) {
 #calltoa {
   display: flex;
 }
@@ -364,11 +367,11 @@ width: 100%;
         font-size: 15px;
         width: 19%;
         padding-left: 3%;
-        
-    }    
+
+    }
     #some {
         width: 95%;
-    
+
     }
     #some i{
         font-size: 26px;
@@ -377,7 +380,7 @@ width: 100%;
     #some img{
         position: absolute;
         right: 0;
-        padding-right: 2.7%; 
+        padding-right: 2.7%;
     }
     #some div{
         position: absolute;
@@ -400,20 +403,65 @@ width: 100%;
   display: flex;
   background-color: inherit;
     clip-path: 0;
+    padding: 5px;
+    width: 40%;
+    align-items: flex-start;
+}
+
+.flexboxx {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#dnastring {
+    position: absolute;
+    padding-top: 35px;
+  display: flex;
+  height: 50%;
+  width: 10%;
+  opacity: 0.8;
+}
+
+#ydelser {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#ydelser div {
+  width: 34%;
 }
 
 #hideshow {
   display: none;
 }
-    footer {
+  footer {
+    height: 300px;
      width: 50%;
-           
     }
+
+    footer h3, footer li {
+      font-size: 1.5em;
+    }
+
     #map{
-        width: 50%;
-        height: 20%;
+      display: inline-block;
+        width: 45%;
+        height: 150px;
         position: absolute;
-        right: 0;
-        
+        right: 5%;
+        background-color: #1989B2;
+        padding-top: 100px;
+    }
+
+    #bluemini {
+      display: inline-block;
+      position: absolute;
+      background-color: #1989B2;
+      right: 0;
+      height: 350px;
+      width: 10%;
+
     }
 }

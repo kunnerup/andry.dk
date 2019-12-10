@@ -21,8 +21,8 @@ $(document).ready(function(){
 mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYTU1MDgiLCJhIjoiY2syMDZ5bXBtMDBuZTNlcXpvbnozYzJuZSJ9.Wo5gS17JDQ8hYPQ82hQlgA';
 var map = new mapboxgl.Map({
 style: 'mapbox://styles/jona5508/ck3zpq0h31vuk1cn74wbe32ug',
-center: [14.42, 53.31],
-zoom: 3.63,
+center: [10.1540, 56.14355],
+zoom: 15.5,
 container: 'map',
 antialias: true
 });
