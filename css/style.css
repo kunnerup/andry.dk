@@ -32,11 +32,13 @@ nav ul li {
 #calltoa {
   background-color: #44D9A0;
   padding: 5px;
-  border-radius: 11px;
+  border-radius: 10px;
   color: black;
   box-shadow: 0 5px 10px #1c1f1d;
   font-weight: bold;
   margin-top: 4px;
+    font-weight: 300;
+    margin-top: 4px;
 }
 
 #hideshow {
@@ -45,7 +47,7 @@ nav ul li {
   margin: auto;
   padding: 9px;
   width: 150px;
-  border-radius: 11px;
+  border-radius: 11px; 
   color: black;
   box-shadow: 0 10px 20px #1c1f1d;
   z-index: 10;
@@ -55,8 +57,8 @@ nav ul li {
   position: absolute;
   color: white;
   float: left;
-  padding: 12px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 20px;
   z-index: 100;
 }
 
@@ -78,7 +80,7 @@ nav ul li {
 
 #burgermenu {
   width: 48px;
-  height: 35px;
+  height: 30px;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -92,8 +94,8 @@ nav ul li {
   display: block;
   position: relative;
   background: white;
-  border-radius: 9px;
-  height: 7px;
+    border-radius: 9px;
+  height: 4px;
   width: 100%;
   left: 0;
 }
@@ -117,6 +119,7 @@ nav ul li {
   width: 100%;
   color: white;
   text-align: center;
+
 }
 
 .bluesection h1 {
@@ -149,10 +152,12 @@ nav ul li {
 }
 
 .bluesectionheader h1 {
-  font-size: 1.5em;
-  padding-top: 70px;
+font-size: 1.6em;
+padding-top: 70px;
 }
-
+.bluesectionheader h2{
+   font-size: 1em; 
+}
 .bluesectionheader p {
   padding: 20px 0 20px 0;
 }
@@ -301,6 +306,23 @@ footer ul {
   flex-direction: column;
   margin: auto;
 }
+#flemmingsection p {
+   padding-top: 3%; 
+    font-size: 16px;
+    padding-left: 5%;
+    text-align: left;
+    
+}
+#flemmingsection ul li{
+    text-align: left;
+    list-style: none;
+    margin: 10px;
+    padding-left: 2%;
+}
+#uber {
+   text-align: left;
+    padding-left: 5%;
+}
 
 #flemmingandry {
   margin: auto;
@@ -374,6 +396,19 @@ footer ul {
     font-size: 26px;
     color: black;
   }
+  
+#ydelser div {
+  width: 34%;
+}
+#flemmingsection p{
+        width: 30px;
+    }
+    
+/*---------------------------Tablet footer-------------------------*/
+    footer div{
+        font-size: 15px;
+        width: 19%;
+        padding-left: 3%;
 
   #some img {
     position: absolute;
