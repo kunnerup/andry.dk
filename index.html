@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,15 @@
 
   <script src="js/js.js" defer></script>
   <script src="js/jquery-3.4.1.min.js"></script>
-      <link rel="stylesheet" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/530a8daa62.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<h2 id="logo">andry.dk</h2>
+  <h2 id="logo">andry.dk</h2>
 
   <div id="burgermenu">
     <span class="top"></span>
@@ -22,44 +25,143 @@
     <span class="bund"></span>
   </div>
 
-<nav>
-  <ul class="mobileMenu">
-    <li id="calltoa">Booking</li>
-        <li>Priser</li>
-            <li>Om mig</li>
-            <li>Kontakt</li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="mobileMenu">
+      <a href="#bookh2"><li id="calltoa">Booking</li></a>
+      <a href="#skubud"><li>Priser</li></a>
+      <a href="#flemmingsection"><li>Om mig</li></a>
+      <a href="#footer"><li>Kontakt</li></a>
+    </ul>
+  </nav>
 
-<section class="bluesectionheader">
-  <h1>Velkommen til Andry<br>Neurologisk Fysioterapi</h1>
+  <section class="bluesectionheader">
+    <h1>Velkommen til Andry<br>Neurologisk Fysioterapi</h1>
 
-  <p>Speciale i funktionel neurologisk fysioterapi,<br>
-  for den almene motionist og atleter på højeste plan!</p>
-  <h2 id="hideshow">Book tid nu</h2>
+    <p>Speciale i funktionel neurologisk fysioterapi,<br>
+      for den almene motionist og atleter på højeste plan!</p>
+      <a href="#bookh2"><h2 id="hideshow">Book tid nu</h2></a>
+  </section>
+
+  <div class="bluebottom"></div>
+
+  <h2>Behandlingsform</h2>
+<p>Neurologisk fysioterapi har fokus på sammenspillet mellem din hjerne og din bevægelighed. Jeg forsøger at påvirke centralnervesystemet, for at du kan opnå bedre resultater!</p>
+<div class="flexboxx">
+  <img id="dnastring" src="images/DNAstring.svg" alt="DNA streng illustration">
+</div>
+
+<section id="ydelser">
+
+<div>
+  <img src="images/samtale.svg" alt="samtale illustration">
+<h3>Indledende samtale</h3>
+<p>Alle behandlinger starter med en personlig samtale. Her finder vi uf, hvad lige netop dine behov og mål er.</p>
+</div>
+
+<div>
+  <img src="images/hjerne.svg" alt="hjerne illustration">
+<h3>Test af 'ledningsnetværket'</h3>
+<p>Efterfølgende ser vi på, hvordan dit personlige system fra hjernen og ud i musklerne fungere.</p>
+</div>
+
+<div>
+  <img src="images/fysisktest.svg" alt="Fysisk test illustration">
+<h3>Test af krop</h3>
+<p>Som næste led laver vi en række fysiske tests, som viser hvor og hvilke problemer der gemmer sig.</p>
+</div>
+
+<div>
+  <img src="images/behandling.svg" alt="behandling illustration">
+<h3>Behandling</h3>
+<p>Ud fra ovenstående proces kan vi nu gå i gang med at løse netop dine udfordringer.</p>
+</div>
+
 </section>
 
-<div class="bluebottom"></div>
+<div id="skubud">Priser</div>
+<div id="priser">
+  <h3>Priser</h3>
+  <p>Alle priser er opgivet i danske kroner og er inklusiv moms.<br>
+    Første behandling: 600,-<br>
+     Anden behandling: 500,-
+  </p></div>
 
-<h2>BEHANDLING</h2>
+  <div class="bluetop"></div>
+  <section class="bluesection">
+    <h2 id="bookh2">Bestil en tid</h2>
+    <iframe id="booking" src="https://system.easypractice.net/book/andry-test?fbclid=IwAR1qZJ3hs8GtUzjOLNSgdRBx0_7oqSn32R-8KBPbWutn4QCgqTn4tTXZQRQ#choose-service"></iframe>
+  </section>
+  <div class="bluebottom"></div>
 
+  <h2>Om Flemming</h2>
+  <section id="flemmingsection">
 
-<div class="bluetop"></div>
-<section class="bluesection">
-<h2>Bestil en tid</h2>
-<iframe id="booking" src="https://system.easypractice.net/book/andry-test?fbclid=IwAR1qZJ3hs8GtUzjOLNSgdRBx0_7oqSn32R-8KBPbWutn4QCgqTn4tTXZQRQ#choose-service"></iframe>
+    <picture><source media="(min-width: 768px)" srcset="images/andry.png">
+		<img id="flemmingandry" src="images/andrymobile.png" alt="Flemming Andry Nuerologisk Fysioterapeut">
+        </picture>
+
+<h2>Om mig</h2>
+
 </section>
-<div class="bluebottom"></div>
 
-<h2>Kunderne siger</h2>
+  <div class="bluetop"></div>
+  <section class="bluesection">
+    <h2>Kunderne siger</h2>
+  </section>
+  <div class="bluebottom"></div>
 
+    <div id="map"></div>
+      <div id="bluemini"></div>
+  <footer id="footer">
+    <div>
+      <ul>
+        <h3>Kontakt</h3>
+        <li>46352014</li>
+        <li>mail@gmail.com</li>
+      </ul>
+    </div>
 
-<div class="bluetop"></div>
-<section class="bluesection">
-<h2>Flemming Andry</h2>
-</section>
-<div class="bluebottom"></div>
+    <div>
 
+      <ul>
+          <h3>Adresse</h3>
+        <li>Tomsagervej 2</li>
+        <li>Aarhus, Danmark</li>
+      </ul>
+    </div>
+
+    <div>
+
+      <ul>
+          <h3>Om</h3>
+        <li>Privacy policy</li>
+        <li>Terms of service</li>
+      </ul>
+    </div>
+    <div>
+
+      <ul>
+          <h3>Om</h3>
+        <li>Privacy policy</li>
+        <li>Terms of service</li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <div class="bluesection">
+
+    <div id="some">
+      <div>
+    <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+<img src="images/Z-Health.png" alt="Z-health logo">
+<br>
+    </div>
+
+  </div>
 
 </body>
 
