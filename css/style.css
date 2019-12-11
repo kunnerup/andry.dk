@@ -1,498 +1,3 @@
-
-* {
-  margin: 0;
-  padding: 0;
-scroll-behavior: smooth;
-}
-
-h1, h2, h3, h4,h5, h6, p, ul, a {
-font-family: 'Lato', sans-serif;
-text-align: center;
-    text-decoration: none;
-    
-}
-
-
-/*----------------NAVIGATION------------*/
-nav ul {
-right: 0;
-  justify-content: space-around;
-  align-items: center;
-  width: 50vw;
-  padding-top: 4px;
-  z-index: 100;
-  position: absolute;
-}
-
-nav ul li {
-  list-style: none;
-  color: white;
-  padding-top: 10px;
-  font-size: 110%;
-  letter-spacing: 0px;
-}
-
-#calltoa {
-  background-color: #44D9A0;
-  padding: 5px;
-  border-radius: 10px;
-  color: black;
-
-    font-weight: 300;
-    margin-top: 4px;
-}
-
-#hideshow {
-  position: relative;
-  background-color: #44D9A0;
-  margin: auto;
-  padding: 9px;
-  width: 150px;
-  border-radius: 11px; 
-  color: black;
-   z-index: 10;
-   
-}
-
-#logo {
-  position: absolute;
-  color: white;
-  float: left;
-  padding: 10px;
-  font-size: 20px;
-  z-index: 100;
-}
-
-/*BURGERMENU*/
-.mobileMenu {
-  display: none;
-  z-index: 10;
-  background-color: black;
-  opacity: 0.95;
-  padding: 50px 0 50px 0;
-  width: 100%;
-  height: 230px;
-  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
-}
-
-.mobileMenu {
-  font-size: 1.3em;
-}
-
-#burgermenu {
-  width: 48px;
-  height: 30px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 100;
-}
-
-#burgermenu span{
-  display: block;
-  position: relative;
-  background: white;
-    border-radius: 9px;
-  height: 4px;
-  width: 100%;
-  left: 0;
-}
-
-#calltoa {
-  display: none;
-}
-
-#booking {
-  height: 80vh;
-  width: 95%;
-  margin: 0 5px 0 5px;
-  border: none;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-/*-----------HEADERSECTION-----------*/
-.bluesection {
-background-color: #1989B2;
-width: 100%;
-color: white;
-text-align: center;
-}
-
-.bluesection h1 {
-font-size: 1.5em;
-padding-top: 70px;
-}
-
-.bluesection p {
-padding: 20px 0 20px 0;
-}
-
-.bluebottom {
-  height: 50px;
-  background-color: #1989B2;
-  clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
-}
-
-.bluetop {
-  height: 50px;
-  background-color: #1989B2;
-  clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
-}
-
-.bluesectionheader {
-background-color: #1989B2;
-width: 100%;
-height: 280px;
-color: white;
-text-align: center;
-}
-
-.bluesectionheader h1 {
-font-size: 1.6em;
-padding-top: 70px;
-}
-.bluesectionheader h2{
-   font-size: 1em; 
-}
-.bluesectionheader p {
-padding: 20px 0 20px 0;
-}
-/*-----------footer-----------*/
-footer {
-    width: 100%;
-    height: 200px;
-    padding-bottom: 50px;
-    background-color: #1989B2;
-    position: relative;
-    font-size: 10px;
-     display: flex;
-   align-items: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
-}
-footer div{
-  display: flex;
-padding-top: 5%;
-    width: 35%;
-color: white;
-    font-size: 15px;
-
-
-
-}
-footer h3 {
-    padding-bottom: 5px;
-    position: relative;
-    text-align: justify;
-    margin: auto;
-
-}
-footer h3:before{
-    content: "";
-    position: absolute;
-    width: 15px;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid white;
-}
-
-footer ul {
-    list-style-type: none;
-    text-align: justify;
-    margin: auto;
-
-}
-
-#some{
-    width: 85%;
-    height: 50px;
-    margin: auto;
-      background-color: #1989B2;
-    border-top: white solid 2px;
-
-}
-
-#some i{
-    padding-top: 1px;
-    padding-bottom: 10px;
-    left: 0;
-    color: black;
-}
-
-#some div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100px;
-        position: absolute;
-        padding-top: 4px;
-    font-size: 22px;
-
-}
-
-#some img{
-    width: 90px;
-    position: absolute;
-    padding-top: 5px;
-    right: 0;
-    padding-right: 7.5%;
-}
-
-
-/*----------------Elementer til siden-------------*/
-#ydelser {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-#ydelser h3 {
-  color: #1989B2;
-}
-
-#ydelser div {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-align-items: center;
-max-width: 70%;
-
-}
-
-#ydelser img {
-  padding: 10px;
-  width: auto;
-  height: 100px;
-}
-
-#dnastring {
-  display: none;
-}
-
-/*PRISER*/
-#skubud {
-  margin: auto;
-  width: 200px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  background-color: #1989B2;
-  color: white;
-  font-size: 25px;
-  padding: 6px;
-  text-align: center;
-  border-radius: 11px;
-  box-shadow: 0 5px 10px #1c1f1d;
-  font-weight: bold;
-}
-
-#priser{
-  display: none;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 30px;
-  padding: 15px;
-}
-
-#priser h3 {
-  color: #1989B2;
-}
-
-
-/*OM FLEMMING*/
-#flemmingsection {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-#flemmingsection p {
-   padding-top: 3%; 
-    font-size: 16px;
-    padding-left: 5%;
-    text-align: left;
-    
-}
-#flemmingsection ul li{
-    text-align: left;
-    list-style: none;
-    margin: 10px;
-    padding-left: 2%;
-}
-#uber {
-   text-align: left;
-    padding-left: 5%;
-}
-
-#flemmingandry {
-margin: auto;
-width: 100%;
-}
-
-#map {
-  display: none;
-}
-
-
-/*------------------------TABLET----------------------------*/
-@media screen and (max-width: 1023px) (min-width: 768px) {
-#calltoa {
-  display: flex;
-}
-#burgermenu {
-  display: none;
-}
-
-.mobileMenu {
-  display: flex;
-  background-color: inherit;
-    clip-path: 0;
-    padding: 5px;
-    width: 40%;
-    align-items: flex-start;
-}
-#hideshow {
-  display: none;
-}
-
-.flexboxx {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-#dnastring {
-    position: absolute;
-    padding-top: 35px;
-  display: flex;
-  height: 50%;
-  width: 10%;
-  opacity: 0.8;
-}
-
-#ydelser {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#ydelser div {
-  width: 34%;
-}
-#flemmingsection p{
-        width: 30px;
-    }
-    
-/*---------------------------Tablet footer-------------------------*/
-    footer div{
-        font-size: 15px;
-        width: 19%;
-        padding-left: 3%;
-
-    }
-    #some {
-        width: 95%;
-
-    }
-    #some i{
-        font-size: 26px;
-        color: black;
-    }
-    #some img{
-        position: absolute;
-        right: 0;
-        padding-right: 2.7%;
-    }
-    #some div{
-        position: absolute;
-        padding-top: 2px;
-    }
-}
-
-
-
-/*---------------------------DESKTOP-------------------------*/
-@media screen and (min-width: 1024px) {
-#calltoa {
-  display: flex;
-}
-#burgermenu {
-  display: none;
-}
-
-.mobileMenu {
-  display: flex;
-  background-color: inherit;
-    clip-path: 0;
-    padding: 5px;
-    width: 40%;
-    align-items: flex-start;
-}
-
-.flexboxx {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-#dnastring {
-    position: absolute;
-    padding-top: 35px;
-  display: flex;
-  height: 50%;
-  width: 10%;
-  opacity: 0.8;
-}
-
-#ydelser {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#ydelser div {
-  width: 34%;
-}
-
-#hideshow {
-  display: none;
-}
-  footer {
-    height: 300px;
-     width: 50%;
-    }
-
-    footer h3, footer li {
-      font-size: 1.5em;
-    }
-
-    #map{
-      display: inline-block;
-        width: 45%;
-        height: 150px;
-        position: absolute;
-        right: 5%;
-        background-color: #1989B2;
-        padding-top: 100px;
-    }
-
-    #bluemini {
-      display: inline-block;
-      position: absolute;
-      background-color: #1989B2;
-      right: 0;
-      height: 350px;
-      width: 10%;
-
-    }
-}
-=======
 * {
   margin: 0;
   padding: 0;
@@ -527,13 +32,11 @@ nav ul li {
 #calltoa {
   background-color: #44D9A0;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 11px;
   color: black;
   box-shadow: 0 5px 10px #1c1f1d;
   font-weight: bold;
   margin-top: 4px;
-    font-weight: 300;
-    margin-top: 4px;
 }
 
 #hideshow {
@@ -542,7 +45,7 @@ nav ul li {
   margin: auto;
   padding: 9px;
   width: 150px;
-  border-radius: 11px; 
+  border-radius: 11px;
   color: black;
   box-shadow: 0 10px 20px #1c1f1d;
   z-index: 10;
@@ -552,8 +55,8 @@ nav ul li {
   position: absolute;
   color: white;
   float: left;
-  padding: 10px;
-  font-size: 20px;
+  padding: 12px;
+  font-size: 30px;
   z-index: 100;
 }
 
@@ -575,7 +78,7 @@ nav ul li {
 
 #burgermenu {
   width: 48px;
-  height: 30px;
+  height: 35px;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -589,8 +92,8 @@ nav ul li {
   display: block;
   position: relative;
   background: white;
-    border-radius: 9px;
-  height: 4px;
+  border-radius: 9px;
+  height: 7px;
   width: 100%;
   left: 0;
 }
@@ -614,7 +117,6 @@ nav ul li {
   width: 100%;
   color: white;
   text-align: center;
-
 }
 
 .bluesection h1 {
@@ -647,12 +149,10 @@ nav ul li {
 }
 
 .bluesectionheader h1 {
-font-size: 1.6em;
-padding-top: 70px;
+  font-size: 1.5em;
+  padding-top: 70px;
 }
-.bluesectionheader h2{
-   font-size: 1em; 
-}
+
 .bluesectionheader p {
   padding: 20px 0 20px 0;
 }
@@ -828,6 +328,7 @@ footer ul {
   display: none;
 }
 
+
 /*------------------------TABLET----------------------------*/
 @media screen and (max-width: 1023px) (min-width: 768px) {
   #calltoa {
@@ -891,19 +392,6 @@ footer ul {
     font-size: 26px;
     color: black;
   }
-  
-#ydelser div {
-  width: 34%;
-}
-#flemmingsection p{
-        width: 30px;
-    }
-    
-/*---------------------------Tablet footer-------------------------*/
-    footer div{
-        font-size: 15px;
-        width: 19%;
-        padding-left: 3%;
 
   #some img {
     position: absolute;
@@ -1013,4 +501,3 @@ footer ul {
     background-color: blue;
   }
 }
-
