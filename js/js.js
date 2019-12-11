@@ -35,11 +35,11 @@ map.on("load", function () {
 map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
 if (error) throw error;
 map.addImage("custom-marker", image);
-/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+/* Style layer: sammensætter kilden til billede, og hvordan det skal vises. */
 map.addLayer({
 id: "markers",
 type: "symbol",
-/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+/* Kilden.. specificerer de geografiske koordinater, hvor billedmarkøren skal placeres.*/
 source: {
 type: "geojson",
 data: {

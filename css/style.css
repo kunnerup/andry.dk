@@ -32,9 +32,11 @@ nav ul li {
 #calltoa {
   background-color: #44D9A0;
   padding: 5px;
+  padding-left: 30px;
+padding-right: 30px;
   border-radius: 11px;
   color: black;
-  box-shadow: 0 5px 10px #1c1f1d;
+  border: 1px solid black;
   font-weight: bold;
   margin-top: 4px;
 }
@@ -244,6 +246,13 @@ footer ul {
   padding-bottom: 20px;
 }
 
+#smalltext {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+}
+
 #ydelser h3 {
   color: #1989B2;
 }
@@ -251,7 +260,7 @@ footer ul {
 #ydelser div {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 75px;
   align-items: center;
   max-width: 70%;
 }
@@ -280,6 +289,7 @@ footer ul {
   border-radius: 11px;
   box-shadow: 0 5px 10px #1c1f1d;
   font-weight: bold;
+  font-family: 'Lato', sans-serif;
 }
 
 #priser {
@@ -294,29 +304,32 @@ footer ul {
   color: #1989B2;
 }
 
+
+
 /*OM FLEMMING*/
 #flemmingsection {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   margin: auto;
+  flex-wrap: wrap;
 }
 #flemmingsection p {
-   padding-top: 3%; 
     font-size: 16px;
-    padding-left: 5%;
     text-align: left;
-    
+    padding-top: 10px;
 }
+
 #flemmingsection ul li{
     text-align: left;
     list-style: none;
-    margin: 10px;
-    padding-left: 2%;
+    padding-top: 10px;
 }
 #uber {
    text-align: left;
-    padding-left: 5%;
+    color: #1989B2;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 #flemmingandry {
@@ -324,13 +337,50 @@ footer ul {
   width: 100%;
 }
 
+#line {
+  height: 3px;
+  margin: 20px 0 20px 0;
+  background-color: #1989B2;
+}
+
 #map {
   display: none;
 }
 
+#facebooklink {
+  padding: 30px 0 20px 0;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+#fed {
+  font-weight: bolder;
+}
+
+h4 a {
+  color: black;
+}
+
+.bluetext{
+  font-weight: bolder;
+  color: #1989B2;
+  letter-spacing: -2px;
+}
+
+
+/*BOOKING*/
+.afbud {
+  font-size: 13px;
+}
+
+  h5 {
+    font-size: 20px;
+  }
+
+
 
 /*------------------------TABLET----------------------------*/
-@media screen and (max-width: 1023px) (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #calltoa {
     display: flex;
   }
@@ -339,13 +389,18 @@ footer ul {
     display: none;
   }
 
+#booking {
+  transform: rotate(-3deg);}
+
   .mobileMenu {
     display: flex;
     background-color: inherit;
     clip-path: 0;
     padding: 5px;
-    width: 40%;
+    width: 50%;
     align-items: flex-start;
+    font-size: 17px;
+    margin-top: 8px;
   }
 
   #hideshow {
@@ -403,6 +458,30 @@ footer ul {
     position: absolute;
     padding-top: 2px;
   }
+
+
+/*TABLET OM FLEMMING*/
+  #flemmingsection {
+    flex-direction: row;
+    width: 95%;
+  }
+
+#flemmingsection div {
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#biografi{
+Order: -1;
+}
+
+#line {
+  height: 3px;
+  margin: 20px 0 20px 0;
+  background-color: #1989B2;
+}
+
 }
 
 /*---------------------------DESKTOP-------------------------*/
@@ -414,6 +493,13 @@ footer ul {
   #burgermenu {
     display: none;
   }
+
+  .bluesectionheader {
+    height: 200px;
+  }
+
+  #booking {
+    transform: rotate(-1.7deg);}
 
   .mobileMenu {
     display: flex;
@@ -459,7 +545,7 @@ footer ul {
   }
 
   footer h3, footer li {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   #map {
@@ -486,18 +572,41 @@ footer ul {
     width: 10%;
   }
 
-  #marker {
-    background-image: url('images/point.png');
-    background-size: cover;
-    width: 50px;
-    height: 60px;
-    border-radius: ;
-    cursor: pointer;
+  /*ABOUT FLEMMING DESKTOP*/
+
+  #flemmingsection {
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
   }
 
-  .mapboxgl-popup {
-    max-width: 200px;
-    opacity: 0.8;
-    background-color: blue;
+  #flemmingandry {
+    width: 347px;
   }
+
+  #centerflemming {
+    display: flex;
+    justify-content: center;
+  }
+
+#flemmingsection div {
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 450px;
+}
+
+#biografi{
+Order: -1;
+}
+
+#biografi ul {
+margin-bottom: 25px;
+}
+
+#line {
+  height: 3px;
+  margin: 20px 0 20px 0;
+  background-color: #1989B2;
+}
 }
