@@ -378,6 +378,33 @@ h4 a {
   }
 
 
+  /*Kunderne siger*/
+  .billedet {
+margin: auto;
+flex-direction: column;
+align-items: center;
+  width: 60%;
+
+  }
+
+  .pics {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .slideknap {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+  }
 
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -483,6 +510,21 @@ Order: -1;
   height: 3px;
   margin: 20px 0 20px 0;
   background-color: #1989B2;
+}
+
+
+/*TABLET KUNDENE SIGER*/
+.billedet {
+margin: auto;
+flex-direction: row;
+align-items: center;
+width: 60%;
+
+}
+
+.pics {
+  width: 40%;
+  padding-bottom: 5px;
 }
 
 }
@@ -612,4 +654,24 @@ margin-bottom: 25px;
   margin: 20px 0 20px 0;
   background-color: #1989B2;
 }
+
+.social {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/*Kunderne siger DESKTOP*/
+.billedet {
+margin: auto;
+flex-direction: row;
+align-items: center;
+width: 60%;
+
+}
+
+.pics {
+  width: 40%;
+  padding-bottom: 5px;
+}
+
 }

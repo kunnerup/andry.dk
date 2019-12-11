@@ -63,17 +63,23 @@ layout: {
 });
 });
 
-//her er den popup der kommer når man trykker
-var popup = new mapboxgl.Popup({ offset: 25 })
-.setText('Andry - Neurologisk Fysioterapi.');
 
-//Skaber selve elementer i dommen
-var el = document.createElement('div');
-el.id = 'marker';
 
-//Her sættes mappen ind på kortet
-new mapboxgl.Marker(el)
-.setLngLat(monument)
-//her gøres det sådan, at popup kommer frem.
-.setPopup(popup)
-.addTo(map);
+//SLIDER TIL 'KUNDERNE SIGER'
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("billedet");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "flex";
+}
