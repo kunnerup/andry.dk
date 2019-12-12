@@ -33,7 +33,7 @@ nav ul li {
   background-color: #44D9A0;
   padding: 5px;
   padding-left: 30px;
-padding-right: 30px;
+  padding-right: 30px;
   border-radius: 11px;
   color: black;
   border: 1px solid black;
@@ -77,6 +77,15 @@ padding-right: 30px;
 .mobileMenu {
   font-size: 1.3em;
 }
+
+nav a{
+  color: white;
+}
+
+nav a:hover {
+  border-bottom: white 3px solid;
+}
+
 
 #burgermenu {
   width: 48px;
@@ -132,6 +141,7 @@ padding-right: 30px;
 
 .bluebottom {
   height: 50px;
+  margin-top: -0.6px;
   background-color: #1989B2;
   clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
 }
@@ -139,6 +149,7 @@ padding-right: 30px;
 .bluetop {
   height: 50px;
   background-color: #1989B2;
+  margin-bottom: -0.8px;
   clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
 }
 
@@ -249,6 +260,14 @@ footer ul {
   padding-bottom: 20px;
 }
 
+.arrowdown {
+  color: #1989B2;
+  font-size: 30px;
+  transform: rotate(90deg);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 #smalltext {
   width: 80%;
   max-width: 600px;
@@ -263,7 +282,6 @@ footer ul {
 #ydelser div {
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
   align-items: center;
   max-width: 70%;
 }
@@ -307,32 +325,32 @@ footer ul {
   color: #1989B2;
 }
 
-
-
 /*OM FLEMMING*/
 #flemmingsection {
   width: 80%;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   margin: auto;
   flex-wrap: wrap;
 }
+
 #flemmingsection p {
-    font-size: 16px;
-    text-align: left;
-    padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 10px;
 }
 
-#flemmingsection ul li{
-    text-align: left;
-    list-style: none;
-    padding-top: 10px;
+#flemmingsection ul li {
+  text-align: left;
+  list-style: none;
+  padding-top: 10px;
 }
-#uber {
-   text-align: left;
-    color: #1989B2;
-    padding-top: 20px;
-    padding-bottom: 10px;
+
+.uber {
+  text-align: left;
+  color: #1989B2;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #flemmingandry {
@@ -356,7 +374,7 @@ footer ul {
   text-decoration: none;
 }
 
-#fed {
+.fed {
   font-weight: bolder;
 }
 
@@ -364,50 +382,53 @@ h4 a {
   color: black;
 }
 
-.bluetext{
+.bluetext {
   font-weight: bolder;
   color: #1989B2;
   letter-spacing: -2px;
 }
-
 
 /*BOOKING*/
 .afbud {
   font-size: 13px;
 }
 
-  h5 {
-    font-size: 20px;
-  }
+h5 {
+  font-size: 20px;
+}
 
-
-  /*Kunderne siger*/
-  .billedet {
-margin: auto;
-flex-direction: column;
-align-items: center;
+/*Kunderne siger*/
+.billedet {
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
   width: 60%;
+}
 
-  }
+.pics {
+  width: 100%;
+  padding-bottom: 5px;
+}
 
-  .pics {
-    width: 100%;
-    padding-bottom: 5px;
-  }
+.slideknap {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
 
-  .slideknap {
-    border:none;
-    display:inline-block;
-    padding:8px 16px;
-    vertical-align:middle;
-    overflow:hidden;
-    text-decoration:none;
-    color:inherit;
-    background-color:inherit;
-    text-align:center;
-    cursor:pointer;
-    white-space:nowrap;
-  }
+/*SoMe*/
+.social {
+  width: 90%;
+  margin: auto;
+}
 
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -415,17 +436,19 @@ align-items: center;
     display: flex;
   }
 
+  #calltoa a {
+    color: black;
+  }
+
   #burgermenu {
     display: none;
   }
 
-#booking {
-  transform: rotate(-3deg);}
+  #booking {}
 
   .mobileMenu {
     display: flex;
     background-color: inherit;
-    clip-path: 0;
     padding: 5px;
     width: 50%;
     align-items: flex-start;
@@ -458,13 +481,20 @@ align-items: center;
     justify-content: space-around;
   }
 
+  .arrowdown {
+    display: none;
+  }
+
   #ydelser div {
     width: 34%;
+    padding-top: 65px;
   }
-#flemmingandry{
-  margin: auto;
-  width: 50%;
-}
+
+  #flemmingandry {
+    margin: auto;
+    width: 50%;
+  }
+
   /*---------------------------Tablet footer-------------------------*/
   footer div {
     font-size: 15px;
@@ -492,54 +522,54 @@ align-items: center;
     padding-top: 2px;
   }
 
-
-/*TABLET OM FLEMMING*/
+  /*TABLET OM FLEMMING*/
   #flemmingsection {
     flex-direction: row;
     width: 95%;
   }
 
-#flemmingsection div {
-  width: 30%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  #flemmingsection div {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-#flemmingandry{
-  width: 100%;
-}
+  #flemmingandry {
+    width: 100%;
+  }
 
-#biografi{
-Order: -1;
-}
+  #biografi {
+    Order: -1;
+  }
 
-#line {
-  height: 3px;
-  margin: 20px 0 20px 0;
-  background-color: #1989B2;
-}
+  #line {
+    height: 3px;
+    margin: 20px 0 20px 0;
+    background-color: #1989B2;
+  }
 
+  /*TABLET KUNDENE SIGER*/
+  .billedet {
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+  }
 
-/*TABLET KUNDENE SIGER*/
-.billedet {
-margin: auto;
-flex-direction: row;
-align-items: center;
-width: 60%;
-
-}
-
-.pics {
-  width: 40%;
-  padding-bottom: 5px;
-}
-
+  .pics {
+    width: 40%;
+    padding-bottom: 5px;
+  }
 }
 
 /*---------------------------DESKTOP-------------------------*/
 @media screen and (min-width: 1024px) {
   #calltoa {
     display: flex;
+  }
+
+  #calltoa a {
+    color: black;
   }
 
   #burgermenu {
@@ -550,13 +580,9 @@ width: 60%;
     height: 200px;
   }
 
-  #booking {
-    transform: rotate(-1.7deg);}
-
   .mobileMenu {
     display: flex;
     background-color: inherit;
-    clip-path: 0;
     padding: 5px;
     width: 40%;
     align-items: flex-start;
@@ -583,8 +609,13 @@ width: 60%;
     justify-content: space-around;
   }
 
+  .arrowdown {
+    display: none;
+  }
+
   #ydelser div {
     width: 34%;
+    padding-top: 65px;
   }
 
   #hideshow {
@@ -625,7 +656,6 @@ width: 60%;
   }
 
   /*ABOUT FLEMMING DESKTOP*/
-
   #flemmingsection {
     flex-direction: row;
     justify-content: center;
@@ -641,44 +671,42 @@ width: 60%;
     justify-content: center;
   }
 
-#flemmingsection div {
-  width: 30%;
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 450px;
-}
+  #flemmingsection div {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 450px;
+  }
 
-#biografi{
-Order: -1;
-}
+  #biografi {
+    Order: -1;
+  }
 
-#biografi ul {
-margin-bottom: 25px;
-}
+  #biografi ul {
+    margin-bottom: 25px;
+  }
 
-#line {
-  height: 3px;
-  margin: 20px 0 20px 0;
-  background-color: #1989B2;
-}
+  #line {
+    height: 3px;
+    margin: 20px 0 20px 0;
+    background-color: #1989B2;
+  }
 
-.social {
-  max-width: 1024px;
-  margin: auto;
-}
+  .social {
+    max-width: 1024px;
+    margin: auto;
+  }
 
-/*Kunderne siger DESKTOP*/
-.billedet {
-margin: auto;
-flex-direction: row;
-align-items: center;
-width: 60%;
+  /*Kunderne siger DESKTOP*/
+  .billedet {
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+  }
 
-}
-
-.pics {
-  width: 40%;
-  padding-bottom: 5px;
-}
-
+  .pics {
+    width: 40%;
+    padding-bottom: 5px;
+  }
 }

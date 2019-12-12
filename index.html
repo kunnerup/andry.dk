@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ANDRY.dk - Neurologisk Fysioterapi</title>
+  <title>Andry • Neurologisk Fysioterapii</title>
+<meta name="description" content="Søger du en professionel neurologisk fysioterapeut? Min klinik, Andry Neurologisk Fysioterapi, ligger i Åbyhøj i Aarhus og her laver jeg et hav af forskellige behandlingsmetoder, som kan hjælpe dig med blandt andet skadesbehandling, skadesforebyggelse eller performanceoptimering. Du kan komme hos mig uanset om du er eliteudøver eller om du dyrker sport som motionist. Behandlingen er tilpasset den individuelle og vha. test og re-tests kan vi genoptræne og rehabilitere dine muskler og nerver således du kan udnytte kroppen fulde potentiale. " />
 
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/js.js" defer></script>
   <script src="js/jquery-3.4.1.min.js"></script>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
-  <link rel="stylesheet" href="css/style.css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/530a8daa62.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/530a8daa62.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,10 +28,10 @@
 
   <nav>
     <ul class="mobileMenu">
-      <a href="#bookh2"><li id="calltoa">Booking</li></a>
-      <a href="#skubud"><li>Priser</li></a>
-      <a href="#flemmingsection"><li>Om mig</li></a>
-      <a href="#footer"><li>Kontakt</li></a>
+      <li id="calltoa"><a href="#bookh2">Booking</a></li>
+      <li><a href="#skubud">Priser</a></li>
+      <li><a href="#flemmingsection">Om mig</a></li>
+      <li><a href="#footer">Kontakt</a></li>
     </ul>
   </nav>
 
@@ -40,61 +41,67 @@
 
     <p>Speciale i funktionel neurologisk fysioterapi,<br>
       for den almene motionist og atleter på højeste plan!</p>
-      <a href="#bookh2"><h2 id="hideshow">Book tid nu</h2></a>
+    <a href="#bookh2">
+      <h2 id="hideshow">Book tid nu</h2>
+    </a>
   </section>
 
   <div class="bluebottom"></div>
 
   <h2>Behandlingsform</h2>
-<p id="smalltext">Neurologisk fysioterapi har fokus på sammenspillet mellem din hjerne og din bevægelighed. Jeg forsøger at påvirke centralnervesystemet, for at du kan opnå bedre resultater!</p>
-<div class="flexboxx">
-  <img id="dnastring" src="images/dnastreng.svg" alt="DNA streng illustration">
-</div>
+  <p id="smalltext">Neurologisk fysioterapi har fokus på sammenspillet mellem din hjerne og din bevægelighed. Jeg forsøger at påvirke centralnervesystemet, for at du kan opnå bedre resultater!</p>
+  <div class="flexboxx">
+    <img id="dnastring" src="images/dnastreng.svg" alt="DNA streng illustration">
+  </div>
 
-<section id="ydelser">
+  <section id="ydelser">
 
-<div>
-  <img src="images/samtale.svg" alt="samtale illustration">
-<h3>Indledende samtale</h3>
-<p>Alle behandlinger starter med en personlig samtale. Her finder vi uf, hvad lige netop dine behov og mål er.</p>
-</div>
+    <div>
+      <img src="images/samtale.svg" alt="samtale illustration">
+      <h3>Indledende samtale</h3>
+      <p>Alle behandlinger starter med en personlig samtale. Her finder vi uf, hvad lige netop dine behov og mål er.</p>
+      <p class="arrowdown">&#10095;</p>
+    </div>
 
-<div>
-  <img src="images/hjerne.svg" alt="hjerne illustration">
-<h3>Test af 'ledningsnetværket'</h3>
-<p>Efterfølgende ser vi på, hvordan dit personlige system fra hjernen og ud i musklerne fungere.</p>
-</div>
+    <div>
+      <img src="images/hjerne.svg" alt="hjerne illustration">
+      <h3>Test af 'ledningsnetværket'</h3>
+      <p>Efterfølgende ser vi på, hvordan dit personlige system fra hjernen og ud i musklerne fungere.</p>
+      <p class="arrowdown">&#10095;</p>
+    </div>
 
-<div>
-  <img src="images/fysisktest.svg" alt="Fysisk test illustration">
-<h3>Test af krop</h3>
-<p>Som næste led laver vi en række fysiske tests, som viser hvor og hvilke problemer der gemmer sig.</p>
-</div>
+    <div>
+      <img src="images/fysisktest.svg" alt="Fysisk test illustration">
+      <h3>Test af krop</h3>
+      <p>Som næste led laver vi en række fysiske tests, som viser hvor og hvilke problemer der gemmer sig.</p>
+      <p class="arrowdown">&#10095;</p>
+    </div>
 
-<div>
-  <img src="images/behandling.svg" alt="behandling illustration">
-<h3>Behandling</h3>
-<p>Ud fra ovenstående proces kan vi nu gå i gang med at løse netop dine udfordringer.</p>
-</div>
+    <div>
+      <img src="images/behandling.svg" alt="behandling illustration">
+      <h3>Behandling</h3>
+      <p>Ud fra ovenstående proces kan vi nu gå i gang med at løse netop dine udfordringer.</p>
+    </div>
 
-</section>
+  </section>
 
-<div id="skubud">Priser</div>
-<div id="priser">
-  <h3>Priser</h3>
-  <p>Alle priser er opgivet i danske kroner.<br>Tjek evt. om du kan få tilskud fra Danmark.<br>
-    Første behandling: <span id="fed">650,-</span><br>
-     Anden behandling: <span id="fed">550,-</span>
-  </p></div>
+  <div id="skubud">Priser</div>
+  <div id="priser">
+    <h3>Priser</h3>
+    <p>Alle priser er opgivet i danske kroner.<br>Tjek evt. om du kan få tilskud fra Danmark.<br>
+      Første behandling: <span class="fed">650,-</span><br>
+      Anden behandling: <span class="fed">550,-</span>
+    </p>
+  </div>
 
   <div class="bluetop"></div>
   <section class="bluesection">
     <h2 id="bookh2">Bestil en tid</h2>
     <iframe id="booking" src="https://system.easypractice.net/book/andry-test?fbclid=IwAR1qZJ3hs8GtUzjOLNSgdRBx0_7oqSn32R-8KBPbWutn4QCgqTn4tTXZQRQ#choose-service"></iframe>
 
-<h5>Afbud og udeblivelse</h5>
-<p class="afbud">Ved afbud bedes du kontakte mig minimum 12 timer før du har tid hos mig.<br>
-Ved udeblivelse eller for sent afbud afregnes normal konsultation kr. 550.</p>
+    <h5>Afbud og udeblivelse</h5>
+    <p class="afbud">Ved afbud bedes du kontakte mig minimum 12 timer før du har tid hos mig.<br>
+      Ved udeblivelse eller for sent afbud afregnes normal konsultation kr. 550.</p>
 
   </section>
   <div class="bluebottom"></div>
@@ -102,84 +109,93 @@ Ved udeblivelse eller for sent afbud afregnes normal konsultation kr. 550.</p>
   <h2>Om Flemming</h2>
   <section id="flemmingsection">
 
-<div id="centerflemming">
-    <picture><source media="(min-width: 768px)" srcset="images/andry.png">
-		<img id="flemmingandry" src="images/andrymobile.png" alt="Flemming Andry Nuerologisk Fysioterapeut">
-  </picture></div>
+    <div id="centerflemming">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/andry.png">
+        <img id="flemmingandry" src="images/andrymobile.png" alt="Flemming Andry Nuerologisk Fysioterapeut">
+      </picture>
+    </div>
 
-<div id="biografi">
-<h3 id="uber">Flemming Andry </h3>
-<p>Jeg hedder flemming Andry og er uddannet fysioterapeut. Jeg går meget op i sport og har selv dyrket blandt andet basketball og triatlon på højt niveau.
-</p>
+    <div id="biografi">
+      <h3 class="uber">Flemming Andry </h3>
+      <p>Jeg hedder flemming Andry og er uddannet fysioterapeut. Jeg går meget op i sport og har selv dyrket blandt andet basketball og triatlon på højt niveau.
+      </p>
 
-<p>Mine bahandlinger foregår i en proces, hvor vi først dykker ned i, hvordan netop din krop reagere. Det betyder at alle behandlinger er forskellige og tilpasset den enkeltes krop.</p>
+      <p>Mine bahandlinger foregår i en proces, hvor vi først dykker ned i, hvordan netop din krop reagere. Det betyder at alle behandlinger er forskellige og tilpasset den enkeltes krop.</p>
 
-<div id="line"></div>
+      <div id="line"></div>
 
-<ul>
-<li><span id="fed">Uddannelse:</span> Fysioterapuet</li>
-<li><span id="fed">Oprindelse:</span> Grenå </li>
-<li><span id="fed">Bopæl:</span> Aarhus</li>
-<li><span id="fed">Erfaring:</span> 4 år </li>
-</ul>
+      <ul>
+        <li><span class="fed">Uddannelse:</span> Fysioterapuet</li>
+        <li><span class="fed">Oprindelse:</span> Grenå </li>
+        <li><span class="fed">Bopæl:</span> Aarhus</li>
+        <li><span class="fed">Erfaring:</span> 4 år </li>
+      </ul>
 
-</div>
-
-
-<div>
-<h3 id="uber">Hvorfor neurologisk fysioterapi? </h3>
-<p>Forestil dig, at du står foran en stikkontakt og trykker på knappen. Optimalt tænder lyset i samme øjeblik du trykker, men nogle gange oplever man at lyset først tænder efter nogle sekunder - eller nogle gange slet ikke tænder.</p><p> På samme måde fungerer centralnervesystemet, hvor hjernen sender impulser ud til kroppen, og jo hurtigere de når frem, jo bedre fungere du! Det kan vi optimere med neurologisk fysioterapi!</p>
-<p>Derfor mener jeg at sammenspillet mellem fysioterapi og neurologi fungerer rigtig godt.</p></div>
+    </div>
 
 
-</section>
+    <div>
+      <h3 class="uber">Hvorfor neurologisk fysioterapi? </h3>
+      <p>Forestil dig, at du står foran en stikkontakt og trykker på knappen. Optimalt tænder lyset i samme øjeblik du trykker, men nogle gange oplever man at lyset først tænder efter nogle sekunder - eller nogle gange slet ikke tænder.</p>
+      <p> På samme måde fungerer centralnervesystemet, hvor hjernen sender impulser ud til kroppen, og jo hurtigere de når frem, jo bedre fungere du! Det kan vi optimere med neurologisk fysioterapi!</p>
+      <p>Derfor mener jeg at sammenspillet mellem fysioterapi og neurologi fungerer rigtig godt.</p>
+    </div>
 
-<h4 id="facebooklink"><span class="bluetext">--------</span> <a target="_blank" href="https://www.facebook.com/andryneurologiskfysioterapi/"> Find mig også på Facebook </a> <span class="bluetext">--------</span></h4>
+
+  </section>
+
+  <h4 id="facebooklink"><span class="bluetext">--------</span> <a target="_blank" href="https://www.facebook.com/andryneurologiskfysioterapi/"> Find mig også på Facebook </a> <span class="bluetext">--------</span></h4>
 
   <div class="bluetop"></div>
   <section class="bluesection">
     <h2>Kunderne siger</h2>
 
     <!--Den venstre knap -->
-      <button class="slideknap" onclick="plusDivs(-1)">&#10094;</button>
-      <!-- Den højre knap -->
-      <button class="slideknap" onclick="plusDivs(1)">&#10095;</button>
-    </div>
+    <button class="slideknap" onclick="plusDivs(-1)">&#10094;</button>
+    <!-- Den højre knap -->
+    <button class="slideknap" onclick="plusDivs(1)">&#10095;</button>
 
     <div class="indhold">
-    <div class="billedet">
-      <img class="pics" src="images/andry.png" alt="Kundefoto">
-<div><h3>Oskar Nielsen</h3>
-<p>"Jeg synes behandlingerne er så fede! Den der personlighed, som han formår at "</p>
-</div>
+      <div class="billedet">
+        <img class="pics" src="images/andry.png" alt="Kundefoto">
+        <div>
+          <h3>Oskar Nielsen</h3>
+          <p>"Jeg synes behandlingerne er så fede! Den der personlighed, som han formår at "</p>
+        </div>
 
-    </div>
+      </div>
 
 
-    <div class="billedet"><img class="pics" src="images/andrymobile.png" alt="Kundefoto">
-      <div><h3>Brian</h3>
-      <p>"Jeg synes behandlingerne er så fede! Den der personlighed, som han formår at " </p>
+      <div class="billedet"><img class="pics" src="images/andrymobile.png" alt="Kundefoto">
+        <div>
+          <h3>Brian</h3>
+          <p>"Jeg synes behandlingerne er så fede! Den der personlighed, som han formår at " </p>
+        </div>
+      </div>
+
+
+      <div class="billedet"><img class="pics" src="images/andry.png" alt="Kundefoto">
+        <div>
+          <h3>Jette</h3>
+          <p>"Jeg synes behandlingerne er så fede! Den der personlighed, som han formår at " </p>
+        </div>
       </div>
     </div>
-
-
-    <div class="billedet"><img class="pics" src="images/andry.png" alt="Kundefoto">
-      <div><h3>Jette</h3>
-      <p>"Jeg synes behandlingerne er så fede! Den der personlighed, som han formår at " </p>
-      </div>
-    </div>
-
 
   </section>
   <div class="bluebottom"></div>
-<div class="social">
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-e45837cf-5620-4dad-95d2-784dd4d74e7a"></div>
-</div>
-    <div id="map"><h4>Find mig</h4></div>
-      <div id="bluemini"></div>
+  <div class="social">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-e45837cf-5620-4dad-95d2-784dd4d74e7a"></div>
+  </div>
+  <div id="map">
+    <h4>Find mig</h4>
+  </div>
+  <div id="bluemini"></div>
   <footer id="footer">
     <div>
+
       <ul>
         <h3>Kontakt</h3>
         <li><a href="tel:46352014">46 35 20 14</a></li>
@@ -190,7 +206,7 @@ Ved udeblivelse eller for sent afbud afregnes normal konsultation kr. 550.</p>
     <div>
 
       <ul>
-          <h3>Adresse</h3>
+        <h3>Adresse</h3>
         <li>Tomsagervej 2</li>
         <li>Aarhus, Danmark</li>
       </ul>
@@ -199,15 +215,15 @@ Ved udeblivelse eller for sent afbud afregnes normal konsultation kr. 550.</p>
     <div>
 
       <ul>
-          <h3>Om</h3>
-        <li>Privacy policy</li>
-        <li>Terms of service</li>
+        <h3>Åbningstider</h3>
+        <li>Man-fre: 09-17</li>
+        <li>Lør-søn: lukket</li>
       </ul>
     </div>
     <div>
 
       <ul>
-          <h3>Om</h3>
+        <h3>Om</h3>
         <li>Privacy policy</li>
         <li>Terms of service</li>
       </ul>
@@ -219,14 +235,14 @@ Ved udeblivelse eller for sent afbud afregnes normal konsultation kr. 550.</p>
 
     <div id="some">
       <div>
-    <a href="https://www.facebook.com/andryneurologiskfysioterapi/?ref=br_tf&epa=SEARCH_BOX">
-    <i class="fab fa-facebook"></i></a>
-       <a href="https://www.instagram.com/flemmingandry/?hl=da"> <i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/andryneurologiskfysioterapi/?ref=br_tf&epa=SEARCH_BOX">
+          <i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/flemmingandry/?hl=da"> <i class="fab fa-instagram"></i></a>
         <i class="fab fa-linkedin"></i>
       </div>
-    <a href="https://zhealtheducation.com/">
-<img src="images/Z-Health.png" alt="Z-health logo"></a>
-<br>
+      <a href="https://zhealtheducation.com/">
+        <img src="images/Z-Health.png" alt="Z-health logo"></a>
+      <br>
     </div>
 
   </div>
