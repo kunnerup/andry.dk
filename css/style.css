@@ -168,7 +168,6 @@ footer {
   position: relative;
   font-size: 10px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -179,13 +178,13 @@ footer div {
   width: 35%;
   color: white;
   font-size: 15px;
+  margin-left: 25px;
 }
 
 footer h3 {
   padding-bottom: 5px;
   position: relative;
   text-align: justify;
-  margin: auto;
 }
 
 footer h3:before {
@@ -195,6 +194,10 @@ footer h3:before {
   bottom: 0;
   left: 0;
   border-bottom: 1px solid white;
+}
+
+footer a {
+  color: white;
 }
 
 footer ul {
@@ -500,6 +503,10 @@ align-items: center;
   width: 30%;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#flemmingandry{
+  width: 100%;
 }
 
 #biografi{
