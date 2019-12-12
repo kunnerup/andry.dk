@@ -218,6 +218,8 @@ footer ul {
 }
 
 #some {
+  display: flex;
+  justify-content: space-between;
   width: 85%;
   height: 50px;
   margin: auto;
@@ -225,29 +227,16 @@ footer ul {
   border-top: white solid 2px;
 }
 
-#some i {
-  padding-top: 1px;
-  padding-bottom: 10px;
-  left: 0;
-  color: black;
-}
-
-#some div {
+#links {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100px;
-  position: absolute;
-  padding-top: 4px;
-  font-size: 22px;
+
 }
 
 #some img {
-  width: 90px;
-  position: absolute;
+  height: 30px;
   padding-top: 5px;
-  right: 0;
-  padding-right: 7.5%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /*----------------Elementer til siden-------------*/
@@ -429,6 +418,7 @@ h5 {
 .social {
   width: 90%;
   margin: auto;
+  padding-bottom: 30px;
 }
 
 /*------------------------TABLET----------------------------*/
