@@ -176,26 +176,31 @@ footer {
   height: 200px;
   padding-bottom: 50px;
   background-color: #1989B2;
-  position: relative;
-  font-size: 10px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 footer div {
   display: flex;
   padding-top: 5%;
-  width: 35%;
+  width: 80%%;
   color: white;
   font-size: 15px;
-  margin-left: 25px;
+flex-wrap: wrap;
+padding-left: 30px;
+justify-content: space-around;
+margin: auto;
+}
+
+footer div div {
+  width: 35%;
+  flex-direction: column;
+
 }
 
 footer h3 {
   padding-bottom: 5px;
   position: relative;
-  text-align: justify;
+  text-align: left;
 }
 
 footer h3:before {
@@ -213,8 +218,7 @@ footer a {
 
 footer ul {
   list-style-type: none;
-  text-align: justify;
-  margin: auto;
+  text-align: left;
 }
 
 #some {
@@ -435,8 +439,6 @@ h5 {
     display: none;
   }
 
-  #booking {}
-
   .mobileMenu {
     display: flex;
     background-color: inherit;
@@ -489,29 +491,16 @@ h5 {
   /*---------------------------Tablet footer-------------------------*/
   footer div {
     font-size: 15px;
-    width: 19%;
-    padding-left: 3%;
+    width: 100%;
+  }
+
+  footer div div {
+    width: 20%;
   }
 
   #some {
     width: 95%;
-  }
-
-  #some i {
-    font-size: 26px;
-    color: black;
-  }
-
-  #some img {
-    position: absolute;
-    right: 0;
-    padding-right: 2.7%;
-  }
-
-  #some div {
-    position: absolute;
-    padding-top: 2px;
-  }
+}
 
   /*TABLET OM FLEMMING*/
   #flemmingsection {
@@ -554,7 +543,7 @@ h5 {
 }
 
 /*---------------------------DESKTOP-------------------------*/
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   #calltoa {
     display: flex;
   }
@@ -617,6 +606,7 @@ h5 {
     height: 300px;
     width: 50%;
   }
+
 
   footer h3, footer li {
     font-size: 20px;
