@@ -140,13 +140,15 @@ nav a:hover {
 }
 
 .bluebottom {
+  display: inherit;
   height: 50px;
   margin-top: -0.6px;
-  background-color: #1989B2;
-  clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
+    background-color: #1989B2;
+      clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
 }
 
 .bluetop {
+    display: inherit;
   height: 50px;
   background-color: #1989B2;
   margin-bottom: -0.8px;
@@ -400,7 +402,7 @@ h5 {
 }
 
 .pics {
-  width: 100%;
+  width: 80%;
   padding-bottom: 5px;
 }
 
@@ -535,7 +537,6 @@ h5 {
     margin: auto;
     flex-direction: row;
     align-items: center;
-    width: 60%;
   }
 
   .pics {
@@ -690,6 +691,7 @@ h5 {
 
   .pics {
     width: 40%;
+    max-width: 400px;
     padding-bottom: 5px;
   }
 }
