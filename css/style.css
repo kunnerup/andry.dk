@@ -144,7 +144,6 @@ nav a:hover {
   height: 50px;
   margin-top: -0.6px;
     background-color: #1989B2;
-      clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
       -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
 }
 
@@ -153,7 +152,7 @@ nav a:hover {
   height: 50px;
   background-color: #1989B2;
   margin-bottom: -0.8px;
-  clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0 100%);
 }
 
 .bluesectionheader {
