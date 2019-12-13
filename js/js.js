@@ -18,7 +18,6 @@ $(document).ready(function() {
 
 
 //mapbox api
-
 //Her indsættes selv kortet med vores egen token og style. Derudover tilpasses zoom og kordinator til startskærm
 mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYTU1MDgiLCJhIjoiY2syMDZ5bXBtMDBuZTNlcXpvbnozYzJuZSJ9.Wo5gS17JDQ8hYPQ82hQlgA';
 var map = new mapboxgl.Map({
