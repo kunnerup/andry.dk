@@ -188,7 +188,7 @@ footer div {
   color: white;
   font-size: 15px;
 flex-wrap: wrap;
-padding-left: 30px;
+padding-left: 15px;
 justify-content: space-around;
 margin: auto;
 }
@@ -496,6 +496,7 @@ h5 {
   footer div {
     font-size: 15px;
     width: 100%;
+    padding-left: 30px;
   }
 
   footer div div {
@@ -608,6 +609,10 @@ h5 {
   footer {
     height: 300px;
     width: 50%;
+  }
+
+  footer div {
+    padding-left: 30px;
   }
 
 
