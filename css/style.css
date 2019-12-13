@@ -104,7 +104,7 @@ nav a:hover {
   position: relative;
   background: white;
   border-radius: 9px;
-  height: 7px;
+  height: 5px;
   width: 100%;
   left: 0;
 }
@@ -406,8 +406,10 @@ h5 {
 
 .slideknap {
   border: none;
+  font-size: 40px;
   display: inline-block;
-  padding: 8px 16px;
+  padding-left: 10px;
+  padding-right: 10px;;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
