@@ -1,3 +1,4 @@
+/*Generelt for siden*/
 * {
   margin: 0;
   padding: 0;
@@ -39,8 +40,10 @@ nav ul li {
   border: 1px solid black;
   font-weight: bold;
   margin-top: 4px;
+  display: none;
 }
 
+/*Book knappen der kun viss på telefonen*/
 #hideshow {
   position: relative;
   background-color: #44D9A0;
@@ -63,6 +66,8 @@ nav ul li {
 }
 
 /*BURGERMENU*/
+/*MobileMenu er der som flere andre stedet benyttet Clip-path, som gør at det kan
+være et skævt element. Webkit gør at det virker i blandet andet Safari*/
 .mobileMenu {
   display: none;
   z-index: 10;
@@ -109,20 +114,7 @@ nav a:hover {
   left: 0;
 }
 
-#calltoa {
-  display: none;
-}
-
-#booking {
-  height: 80vh;
-  width: 95%;
-  margin: 0 5px 0 5px;
-  border: none;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-/*-----------HEADERSECTION-----------*/
+/*-----------HEADERSECTION og Blue-elements-----------*/
 .bluesection {
   background-color: #1989B2;
   width: 100%;
@@ -385,6 +377,15 @@ h4 a {
 }
 
 /*BOOKING*/
+#booking {
+  height: 80vh;
+  width: 95%;
+  margin: 0 5px 0 5px;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .afbud {
   font-size: 13px;
 }
@@ -431,6 +432,8 @@ h5 {
 
 /*------------------------TABLET----------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /*Menu tablet*/
   #calltoa {
     display: flex;
   }
@@ -456,6 +459,8 @@ h5 {
   #hideshow {
     display: none;
   }
+
+  /*BAHANDLINGE TABLET*/
 
   .flexboxx {
     display: flex;
@@ -487,12 +492,7 @@ h5 {
     padding-top: 65px;
   }
 
-  #flemmingandry {
-    margin: auto;
-    width: 50%;
-  }
-
-  /*---------------------------Tablet footer-------------------------*/
+  /*---------------------------Tablet footer og SoMe-------------------------*/
   footer div {
     font-size: 15px;
     width: 100%;
@@ -521,6 +521,8 @@ h5 {
 
   #flemmingandry {
     width: 100%;
+    margin: auto;
+    width: 50%;
   }
 
   #biografi {
@@ -548,6 +550,8 @@ h5 {
 
 /*---------------------------DESKTOP-------------------------*/
 @media only screen and (min-width: 1024px) {
+
+  /*Navigation desktop og blue-elements*/
   #calltoa {
     display: flex;
   }
@@ -571,6 +575,8 @@ h5 {
     width: 40%;
     align-items: flex-start;
   }
+
+  /*Behandlinger desktop*/
 
   .flexboxx {
     display: flex;
@@ -605,6 +611,8 @@ h5 {
   #hideshow {
     display: none;
   }
+
+  /* Footer desktop */
 
   footer {
     height: 300px;
@@ -680,6 +688,8 @@ h5 {
     margin: 20px 0 20px 0;
     background-color: #1989B2;
   }
+
+  /* SoMe desktop */
 
   .social {
     max-width: 1024px;
